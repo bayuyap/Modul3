@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="id.sch.smktelkom_mlg.colorvariable.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#03feed"
+        android:gravity="center"
+        android:text="Pilih Warna"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup01"
+        android:layout_width="wrap_content"
+        android:layout_height="226dp"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+
+        android:layout_marginTop="38dp"
+        android:layout_weight="0.86"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rdb8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/RadioGroup01"
+            android:layout_below="@+id/textView"
+            android:checked="false"
+            android:text="Cayon" />
+
+        <RadioButton
+            android:id="@+id/rdb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/RadioGroup01"
+            android:layout_below="@+id/rdb4"
+            android:checked="false"
+            android:text="Yellow" />
+
+        <RadioButton
+            android:id="@+id/rdb6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rdb7"
+            android:layout_alignStart="@+id/rdb7"
+            android:checked="false"
+            android:text="Dark" />
+
+        <RadioButton
+            android:id="@+id/rdb7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rdb2"
+            android:layout_alignStart="@+id/rdb2"
+            android:checked="false"
+            android:text="Pink" />
+
+        <RadioButton
+            android:id="@+id/rdb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnexit"
+            android:layout_centerVertical="true"
+            android:text="Green"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rdb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/RadioGroup01"
+            android:layout_below="@+id/RadioGroup01"
+            android:text="Blue"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rdb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:checked="false"
+            android:text="White" />
+
+        <RadioButton
+            android:id="@+id/rdb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/rdb6"
+            android:layout_below="@+id/rdb3"
+            android:text="Red" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnexit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtwarna"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:text="Keluar" />
+
+    <TextView
+        android:id="@+id/txtwarna"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnexit"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Warna yang dipilih"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next" />
+
+
+</LinearLayout>

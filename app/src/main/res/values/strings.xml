@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ColorVariable</string>
+    <string name="btnexit">Exit</string>
+    <string name="txtwarna">Warna Yang dipilih</string>
+    <color name="backBlue">#0000FF</color>
+    <color name="backRed">#FF0000</color>
+    <color name="backGreen">#00cc00</color>
+    <color name="backWhite">#FFFFFF</color>
+    <color name="backDark">#663300</color>
+    <color name="backPink">#FF4081</color>
+    <color name="backCayon">#2FFFFF</color>
+    <color name="backYellow">#FFFF81</color>
+</resources>
