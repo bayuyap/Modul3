@@ -1,5 +1,7 @@
 package id.sch.smktelkom_mlg.colorvariable;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v == exit) {
-            finish();
+            showDialog();
         } else if (v == r1) {
             warna.setBackgroundResource(R.color.backRed);
         } else if (v == r2) {
@@ -64,5 +66,37 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent i = new Intent(getApplicationContext(), Main2Activity.class);
             startActivity(i);
         }
+    }
+
+    private void showDialog() {
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                this);
+
+        // set title dialog
+        alertDialogBuilder.setTitle("Keluar dari aplikasi?");
+
+        // set pesan dari dialog
+        alertDialogBuilder
+                .setMessage("Klik Ya untuk keluar!")
+                .setIcon(R.mipmap.ic_launcher)
+                .setCancelable(false)
+                .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+
+                        MainActivity.this.finish();
+                    }
+                })
+                .setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+
+                        dialog.cancel();
+                    }
+                });
+
+        // membuat alert dialog dari builder
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // menampilkan alert dialog
+        alertDialog.show();
     }
 }
